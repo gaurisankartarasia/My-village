@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogOverlay } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 import Masonry from "react-masonry-css";
 
 // Sample image data (replace with your village images)
@@ -84,13 +83,16 @@ const GalleryPage: React.FC = () => {
           columnClassName="pl-4"
         >
           {images.map((image, index) => (
-            <div
-              key={index}
-              ref={(el) => (imageRefs.current[index] = el)}
-              data-index={index}
-              className="mb-4 relative group cursor-pointer"
-              onClick={() => setSelectedImage(image.src)}
-            >
+  <div
+    key={index}
+    ref={(el) => {
+      imageRefs.current[index] = el;
+    }}
+    data-index={index}
+    className="mb-4 relative group cursor-pointer"
+    onClick={() => setSelectedImage(image.src)}
+  >
+
               {/* Image with lazy loading */}
               {visibleImages[index] ? (
                 <img

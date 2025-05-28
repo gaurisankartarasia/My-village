@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you'll use React Router
-// If not using React Router, replace <Link> with <a>
+import { Link } from 'react-router-dom';
 
-import { cn } from "@/lib/utils"; // Utility for conditional classnames
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
-  NavigationMenuContent, // If you want dropdowns
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger, // If you want dropdowns
+  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import {
@@ -18,18 +17,31 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetClose, // To close the sheet programmatically or with a button
+  SheetClose,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MountainIcon } from "lucide-react"; // Example icons
+import { Menu, X, MountainIcon } from "lucide-react";
 
-// Define your navigation links
-const navLinks = [
+// Updated type definitions
+interface DropdownItem {
+  title: string;
+  href: string;
+  description: string;
+}
+
+interface NavLink {
+  title: string;
+  href?: string; // Optional for dropdown items
+  isDropdown?: boolean;
+  dropdownItems?: DropdownItem[];
+}
+
+// Define your navigation links with proper typing
+const navLinks: NavLink[] = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about" },
   { title: "Services", href: "/services" },
   { title: "Contact", href: "/contact" },
-  // Example of a dropdown menu item (optional)
   {
     title: "More",
     isDropdown: true,
@@ -59,7 +71,7 @@ export default function Navbar() {
               <NavigationMenuList>
                 {navLinks.map((item) => (
                   <NavigationMenuItem key={item.title}>
-                    {item.isDropdown ? ( // Check if it's a dropdown item
+                    {item.isDropdown ? (
                       <>
                         <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
                         <NavigationMenuContent>
@@ -77,11 +89,14 @@ export default function Navbar() {
                         </NavigationMenuContent>
                       </>
                     ) : (
-                      <Link to={item.href} legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                          {item.title}
+                      // Only render Link if href exists
+                      item.href && (
+                        <NavigationMenuLink asChild>
+                          <Link to={item.href} className={navigationMenuTriggerStyle()}>
+                            {item.title}
+                          </Link>
                         </NavigationMenuLink>
-                      </Link>
+                      )
                     )}
                   </NavigationMenuItem>
                 ))}
@@ -89,7 +104,7 @@ export default function Navbar() {
             </NavigationMenu>
           </div>
 
-          {/* Mobile Navigation Trigger (Hamburger Menu) */}
+          {/* Mobile Navigation Trigger */}
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -103,18 +118,20 @@ export default function Navbar() {
                   <SheetTitle className="flex items-center justify-between">
                     <span>Menu</span>
                     <SheetClose asChild>
-                       <Button variant="ghost" size="icon">
-                         <X className="h-5 w-5" />
-                         <span className="sr-only">Close menu</span>
-                       </Button>
-                     </SheetClose>
+                      <Button variant="ghost" size="icon">
+                        <X className="h-5 w-5" />
+                        <span className="sr-only">Close menu</span>
+                      </Button>
+                    </SheetClose>
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col space-y-3">
                   {navLinks.map((item) =>
                     item.isDropdown ? (
                       <div key={item.title} className="space-y-1">
-                        <p className="px-3 py-2 font-semibold text-sm text-muted-foreground">{item.title}</p>
+                        <p className="px-3 py-2 font-semibold text-sm text-muted-foreground">
+                          {item.title}
+                        </p>
                         {item.dropdownItems?.map((subItem) => (
                           <SheetClose asChild key={subItem.href}>
                             <Link
@@ -127,14 +144,17 @@ export default function Navbar() {
                         ))}
                       </div>
                     ) : (
-                      <SheetClose asChild key={item.href}>
-                        <Link
-                          to={item.href}
-                          className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
-                        >
-                          {item.title}
-                        </Link>
-                      </SheetClose>
+                      // Only render Link if href exists
+                      item.href && (
+                        <SheetClose asChild key={item.href}>
+                          <Link
+                            to={item.href}
+                            className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
+                          >
+                            {item.title}
+                          </Link>
+                        </SheetClose>
+                      )
                     )
                   )}
                 </div>
@@ -147,17 +167,19 @@ export default function Navbar() {
   );
 }
 
-// Helper component for NavigationMenuContent items (if using dropdowns)
+// Helper component for NavigationMenuContent items
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
+  React.ComponentPropsWithoutRef<"a"> & { href?: string; title?: string }
 >(({ className, title, children, href, ...props }, ref) => {
+  // Only render if href exists
+  if (!href) return null;
+
   return (
     <li>
       <NavigationMenuLink asChild>
-        {/* If using React Router for these links too */}
         <Link
-          to={href || "#"} // Fallback href
+          to={href}
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -174,4 +196,4 @@ const ListItem = React.forwardRef<
     </li>
   );
 });
-ListItem.displayName = "ListItem";
+ListItem.displayName = "ListItem";  
