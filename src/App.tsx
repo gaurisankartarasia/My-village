@@ -3,12 +3,14 @@ import Home from './pages/Home';
 import GalleryPage from './pages/GalleryPage';
 import Navbar from './components/Navbar';
 import KingsPage from './pages/Kings';
+import UnderDevelopment from './components/u_d';
 
 const App: React.FC = () => {
 
   return (
     <>
       <Navbar/>
+      <UnderDevelopment/>
 
         <Routes> 
          

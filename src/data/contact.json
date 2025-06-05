@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "type": "Email",
+    "title": "Odisha Tourism",
+    "value": "info@odishatourism.gov.in",
+    "description": "For inquiries about Badamba’s attractions, festivals, or travel information.",
+    "link": "mailto:info@odishatourism.gov.in"
+  },
+  {
+    "id": 2,
+    "type": "Email",
+    "title": "Badamba Community Health Centre",
+    "value": "bpomaniabandha2@gmail.com",
+    "description": "For health-related or community inquiries in Badamba.",
+    "link": "mailto:bpomaniabandha2@gmail.com"
+  },
+  {
+    "id": 3,
+    "type": "Email",
+    "title": "Cuttack District Administration",
+    "value": "dm-cuttack@nic.in",
+    "description": "For administrative queries related to Badamba.",
+    "link": "mailto:dm-cuttack@nic.in"
+  },
+  {
+    "id": 4,
+    "type": "Social Media",
+    "title": "Odisha Tourism (Facebook)",
+    "value": "Odisha Tourism",
+    "description": "Follow for updates on Badamba’s festivals and attractions.",
+    "link": "https://www.facebook.com/OdishaTourismOfficial"
+  },
+  {
+    "id": 5,
+    "type": "Social Media",
+    "title": "Odisha Tourism (Twitter/X)",
+    "value": "@Odisha_Tourism",
+    "description": "Get the latest news on Badamba’s cultural events.",
+    "link": "https://twitter.com/Odisha_Tourism"
+  },
+  {
+    "id": 6,
+    "type": "Social Media",
+    "title": "Odisha Tourism (Instagram)",
+    "value": "@odishatourismofficial",
+    "description": "Explore visuals of Badamba’s heritage and festivals.",
+    "link": "https://www.instagram.com/odishatourismofficial/"
+  },
+  {
+    "id": 7,
+    "type": "Social Media",
+    "title": "Cuttack District (Facebook)",
+    "value": "Cuttack District",
+    "description": "Updates on local governance and events in Badamba.",
+    "link": "https://www.facebook.com/CuttackDistrict"
+  },
+  {
+    "id": 8,
+    "type": "Form",
+    "title": "Contact Form",
+    "description": "Send inquiries about Badamba to Odisha Tourism or local authorities.",
+    "fields": [
+      { "name": "name", "label": "Name", "type": "text", "placeholder": "Your Name" },
+      { "name": "email", "label": "Email", "type": "email", "placeholder": "Your Email" },
+      { "name": "message", "label": "Message", "type": "textarea", "placeholder": "Your Inquiry" }
+    ],
+    "submitLabel": "Send Inquiry"
+  },
+  {
+    "id": 9,
+    "type": "Form",
+    "title": "Guestbook",
+    "description": "Share your experience visiting Badamba (e.g., festivals, temples, markets).",
+    "fields": [
+      { "name": "name", "label": "Name", "type": "text", "placeholder": "Your Name" },
+      { "name": "feedback", "label": "Feedback", "type": "textarea", "placeholder": "Your Experience" },
+      { "name": "email", "label": "Email (Optional)", "type": "email", "placeholder": "Your Email (Optional)" }
+    ],
+    "submitLabel": "Submit Feedback"
+  }
+]

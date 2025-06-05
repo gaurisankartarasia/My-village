@@ -26,8 +26,8 @@ function Kings() {
         }
         const data: King[] = await response.json();
         setKings(data);
-      } catch (err) {
-        setError('Error loading kings data. Please try again later.');
+      } catch (err: unknown) {
+        setError(`Error loading kings data: ${err instanceof Error ? err.message : 'Unknown error'}`);
       } finally {
         setLoading(false);
       }

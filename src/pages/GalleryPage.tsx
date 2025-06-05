@@ -2,40 +2,37 @@ import { useState, useEffect, useRef } from "react";
 import { Dialog, DialogContent, DialogOverlay } from "@/components/ui/dialog";
 import Masonry from "react-masonry-css";
 
-// Sample image data (replace with your village images)
-const images = [
-  {
-    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    name: "Turquoise Sea",
-    description: "A serene beach with crystal-clear waters.",
-  },
-  {
-    src: "https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg",
-    name: "Frozen Mount",
-    description: "Snow-capped peaks under a golden sunset.",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    name: "Rocky Outcrop",
-    description: "Majestic rock formations against a blue sky.",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    name: "Sunset Stroll",
-    description: "A peaceful walk along the shore at dusk.",
-  },
-  
-];
+// Define the Image interface
+interface Image {
+  src: string;
+  name: string;
+  description: string;
+}
 
 const GalleryPage: React.FC = () => {
-  // State for selected image in modal
+  // State for images and selected image in modal
+  const [images, setImages] = useState<Image[]>([]);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  // Fetch images from JSON file
+  useEffect(() => {
+    fetch('src/data/images.json')
+      .then((response) => response.json())
+      .then((data: Image[]) => setImages(data))
+      .catch((error) => console.error('Error fetching images:', error));
+  }, []);
 
   // Lazy loading with IntersectionObserver
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [visibleImages, setVisibleImages] = useState<boolean[]>(new Array(images.length).fill(false));
+  const [visibleImages, setVisibleImages] = useState<boolean[]>([]);
 
   useEffect(() => {
+    // Initialize visibleImages based on images length
+    setVisibleImages(new Array(images.length).fill(false));
+
+    // Copy imageRefs.current to a local variable
+    const currentRefs = imageRefs.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -53,16 +50,17 @@ const GalleryPage: React.FC = () => {
       { rootMargin: "100px" }
     );
 
-    imageRefs.current.forEach((ref) => {
+    currentRefs.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
+    // Use the copied variable in the cleanup function
     return () => {
-      imageRefs.current.forEach((ref) => {
+      currentRefs.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
-  }, []);
+  }, [images]); // Add images as dependency since visibleImages depends on images length
 
   // Breakpoints for masonry grid
   const breakpointColumnsObj = {
@@ -74,7 +72,7 @@ const GalleryPage: React.FC = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">Village Gallery</h2>
+        <h2 className="text-xl font-bold text-gray-800 text-center mb-8">Village Gallery</h2>
 
         {/* Masonry Grid */}
         <Masonry
@@ -83,16 +81,15 @@ const GalleryPage: React.FC = () => {
           columnClassName="pl-4"
         >
           {images.map((image, index) => (
-  <div
-    key={index}
-    ref={(el) => {
-      imageRefs.current[index] = el;
-    }}
-    data-index={index}
-    className="mb-4 relative group cursor-pointer"
-    onClick={() => setSelectedImage(image.src)}
-  >
-
+            <div
+              key={index}
+              ref={(el) => {
+                imageRefs.current[index] = el;
+              }}
+              data-index={index}
+              className="mb-4 relative group cursor-pointer"
+              onClick={() => setSelectedImage(image.src)}
+            >
               {/* Image with lazy loading */}
               {visibleImages[index] ? (
                 <img
@@ -124,7 +121,6 @@ const GalleryPage: React.FC = () => {
                 alt="Zoomed image"
                 className="w-full h-auto max-h-[80vh] rounded-lg"
               />
-              
             </div>
           </DialogContent>
         </Dialog>

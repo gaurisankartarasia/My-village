@@ -20,7 +20,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MountainIcon } from "lucide-react";
+import { Menu, MountainIcon } from "lucide-react";
 
 // Updated type definitions
 interface DropdownItem {
@@ -39,17 +39,18 @@ interface NavLink {
 // Define your navigation links with proper typing
 const navLinks: NavLink[] = [
   { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Contact", href: "/contact" },
-  {
-    title: "More",
-    isDropdown: true,
-    dropdownItems: [
-      { title: "Blog", href: "/blog", description: "Read our latest articles." },
-      { title: "Careers", href: "/careers", description: "Join our amazing team." },
-    ],
-  },
+  // { title: "About", href: "#about" },
+  { title: "Gallery", href: "/gallery" },
+  { title: "Kings", href: "/kings" },
+  // { title: "Contact", href: "/contact" },
+  // {
+  //   title: "More",
+  //   isDropdown: true,
+  //   dropdownItems: [
+  //     { title: "Blog", href: "/blog", description: "Read our latest articles." },
+  //     { title: "Careers", href: "/careers", description: "Join our amazing team." },
+  //   ],
+  // },
 ];
 
 export default function Navbar() {
@@ -62,7 +63,7 @@ export default function Navbar() {
           {/* Logo/Brand */}
           <Link to="/" className="flex items-center gap-2 text-lg font-semibold">
             <MountainIcon className="h-6 w-6 text-primary" />
-            <span className="hidden sm:inline-block">MyApp</span>
+            <span className="hidden sm:inline-block">My Badamba</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -113,16 +114,11 @@ export default function Navbar() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="left" className="w-full">
                 <SheetHeader className="mb-4">
                   <SheetTitle className="flex items-center justify-between">
                     <span>Menu</span>
-                    <SheetClose asChild>
-                      <Button variant="ghost" size="icon">
-                        <X className="h-5 w-5" />
-                        <span className="sr-only">Close menu</span>
-                      </Button>
-                    </SheetClose>
+                   
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col space-y-3">
@@ -169,7 +165,7 @@ export default function Navbar() {
 
 // Helper component for NavigationMenuContent items
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
+  React.ComponentRef<"a">,
   React.ComponentPropsWithoutRef<"a"> & { href?: string; title?: string }
 >(({ className, title, children, href, ...props }, ref) => {
   // Only render if href exists

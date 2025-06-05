@@ -1,0 +1,65 @@
+[
+  {
+  "id": 1,
+  "name": "Bhattarika Temple",
+  "description": "Ancient temple in Badamba, Odisha, dedicated to Maa Bhattarika. Located on a Mahanadi River island, accessible by boat, featuring Kalingan architecture. Vibrant during Makara Sankranti.",
+  "imageUrl": "https://static.toiimg.com/photo/52687210/.jpg",
+  "bestTime": "any"
+},
+  {
+    "id": 2,
+    "name": "Singhanath Temple",
+    "description": "One of the oldest temples in Odisha, dedicated to Lord Shiva, showcasing Kalingan architecture. Located on an island in the Mahanadi River, accessible by boat. Vibrant during Makara Sankranti.",
+    "imageUrl": "https://scontent.fbbi1-2.fna.fbcdn.net/v/t1.6435-9/94017385_665945077309292_7955245366041903104_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9lHYRWMHZYAQ7kNvwEFd7ao&_nc_oc=Adm5vIYMBG2bSNW22Zkq4DG-2yHz5LE55z8Vuc8FvtpXmXTAGk6lUtM4d0nbrahoZ-YyiaO6VTaaiqVDxOHxi8nu&_nc_zt=23&_nc_ht=scontent.fbbi1-2.fna&_nc_gid=ZubsKFf29ZytcnLJsXWCcQ&oh=00_AfK7gLfh1qIFkHcpolX_atCCpUkFzPCWblOJg3JR6D6xNQ&oe=6867B0CF",
+    "bestTime": "October to March, especially January for Makara Mela"
+  },
+  {
+    "id": 3,
+    "name": "Royal Temple Complex",
+    "description": "A 16th-century complex with Jagannath and Krishna temples, built by Badamba kings. Known for intricate carvings and spiritual ambiance, especially during Rath Yatra.",
+    "imageUrl": "https://files.yappe.in/place/full/jagannath-temple-rajabati-badamba-6459907.webp",
+    "bestTime": "Year-round, June/July for Rath Yatra"
+  },
+  {
+    "id": 4,
+    "name": "Mahanadi River",
+    "description": "A scenic river offering boating and tranquil views. Ideal for picnics and rituals during festivals, with lush surroundings enhancing its charm.",
+    "imageUrl": "https://scontent.fbbi1-2.fna.fbcdn.net/v/t39.30808-6/469639770_28704768249122275_6109846719478856980_n.jpg?stp=dst-jpg_p843x403_tt6&_nc_cat=105&ccb=1-7&_nc_sid=536f4a&_nc_ohc=FQxWFmFuRQYQ7kNvwHY0kcd&_nc_oc=Adlp0BhlVXKoorra0RF0SYhsuPTC7qeN80ZOAteiAm2B8EOML6xUyF0IttIMYRziNWG0fAyYsbkY7kBQ4vIw6VIe&_nc_zt=23&_nc_ht=scontent.fbbi1-2.fna&_nc_gid=T1Z7y3p93f-DrO8UW6ZrLw&oh=00_AfL8lTbc9aFMd_en_igNh4TkM4plpkV2cuCXTqKBd1AJEA&oe=684619B5",
+    "bestTime": "July to September for lush scenery, October to March for pleasant weather"
+  },
+  {
+    "id": 5,
+    "name": "Mahakali Temple",
+    "description": "Dedicated to Goddess Kali, this temple is a spiritual hub, vibrant during Durga Puja and Kali Puja with cultural performances and rituals.",
+    "imageUrl": "https://files.yappe.in/place/full/maa-mahakali-waterfall-7321357.webp",
+    "bestTime": "October to November for Durga Puja and Kali Puja"
+  },
+  {
+    "id": 6,
+    "name": "Dakhinakali Temple",
+    "description": "Dedicated to Goddess Kali, this temple is a spiritual hub, vibrant during Durga Puja and Kali Puja with cultural performances and rituals.",
+    "imageUrl": "",
+    "bestTime": "October to November for Durga Puja and Kali Puja"
+  },
+  {
+    "id": 7,
+    "name": "Badamba Fort",
+    "description": "Ruins of the historic fort of Badamba’s princely rulers, surrounded by greenery. A site for history enthusiasts exploring Odisha’s royal past.",
+    "imageUrl": "https://blogvirasatehind.wordpress.com/wp-content/uploads/2019/08/img_1629.jpg",
+    "bestTime": "October to March"
+  },
+  {
+    "id": 8,
+    "name": "Local Festivals",
+    "description": "Badamba’s festivals like Makara Mela, Rath Yatra, and Durga Puja showcase Odia culture with music, dance, and cuisine like Pakhala Bhata.",
+    "imageUrl": "https://files.yappe.in/place/full/bali-makara-mela-ground-gopinathpur-badamba-7885163.webp",
+    "bestTime": "January for Makara Mela, June/July for Rath Yatra, October for Durga Puja"
+  },
+  {
+    "id": 9,
+    "name": "Natural Surroundings",
+    "description": "Lush hills and rural landscapes offer nature walks and eco-tourism. Experience tribal culture and serene village life along the Mahanadi.",
+    "imageUrl": "https://indiano.travel/wp-content/uploads/2024/08/Deojhar-Waterfall-1.jpg",
+    "bestTime": "October to March"
+  }
+]

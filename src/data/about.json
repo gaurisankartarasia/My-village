@@ -1,0 +1,51 @@
+{
+  "title": "Badamba, Odisha",
+  "description": "A Historic Town by the Mahanadi",
+  "history": {
+    "title": "History & Origin",
+    "content": "The erstwhile princely state of Badamba, nestled in the Mahanadi delta region of Odisha, boasts a rich and ancient history, believed to have been founded in 1305 CE by a scion of the Chauhan dynasty. Legend attributes its name to 'Badamb', a type of tree prevalent in the area during its inception. Over the centuries, Badamba maintained a largely independent existence, strategically positioned and often navigating alliances and conflicts with larger regional powers. Its rulers, belonging to the Ganga dynasty, were known for their patronage of art, culture, and religion, leaving behind a legacy of temples and cultural practices. Despite its relatively small size, Badamba played a significant role in the local political landscape, its history interwoven with the broader narratives of Odisha's princely states until its eventual merger with the Indian Union in 1948."
+  },
+  "facts": {
+    "title": "Key Facts",
+    "items": [
+      {
+        "label": "Location",
+        "value": "Badamba Tehsil, Cuttack, Odisha (20.43°N, 85.38°E, 94m elevation)."
+      },
+      {
+        "label": "Population",
+        "value": "6,284 (town), 149,793 (tehsil, 2011 Census)."
+      },
+      {
+        "label": "Founded",
+        "value": "Prominent since the 14th century, princely state status by the 16th century."
+      },
+      {
+        "label": "Status",
+        "value": "Notified Area Council since February 24, 2024."
+      }
+    ]
+  },
+  "special": {
+    "title": "What Makes Badamba Special",
+    "intro": "Nestled between the Mahanadi River and green hills, Badamba is known for its scenic beauty and rich traditions.",
+    "items": [
+      {
+        "label": "Temples",
+        "value": "Bhattarika Temple (Shakti Pitha), Singhanath Temple (Saiva Pitha), and Jagannath Temple complex."
+      },
+      {
+        "label": "Festivals",
+        "value": "Vibrant Dussehra celebrations with tribal rituals, Pana Sankranti, and Mahashivratri."
+      },
+      {
+        "label": "Natural Beauty",
+        "value": "Mahanadi River views and nearby Anshupa Lake."
+      },
+      {
+        "label": "Connectivity",
+        "value": "A 3.4-km T-Bridge enhances access to Singhanath Temple."
+      }
+    ]
+  }
+}
