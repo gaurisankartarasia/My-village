@@ -1,95 +1,123 @@
-import React from 'react';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import visitData from '@/data/visit.json';
+import React from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import CardContent from "@mui/material/CardContent";
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import { styled } from "@mui/material/styles";
+import Container from "@mui/material/Container";
+import visitData from "@/content/JSON_data/visit.json";
 
-interface VisitItem {
-  id: number;
-  section: string;
-  title: string;
-  description: string;
-  imageUrl: string;
-  highlight: string;
-}
+const HighlightBadge = styled(Box)(({ theme }) => ({
+  padding: theme.spacing(0.5, 1),
+  backgroundColor: theme.palette.primary.main,
+  color: theme.palette.info.contrastText,
+  borderRadius: theme.shape.borderRadius,
+  fontSize: "0.75rem",
+  fontWeight: 500,
+}));
 
 const Visit: React.FC = () => {
-  const sections = Array.from(new Set(visitData.map((item: VisitItem) => item.section)));
+  const sections = Array.from(new Set(visitData.map((it) => it.section)));
 
   return (
-    <section className="py-12 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-xl font-bold text-center mb-8">How to Visit Badamba</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Left Column: Accordion with Travel Info */}
-          <div className="md:col-span-2 space-y-4">
-            <Accordion type="single" collapsible>
-              {sections
-                .filter((section) => section !== 'Map') // Exclude Map section from accordion
-                .map((section) => (
-                  <AccordionItem key={section} value={section} className="border-b">
-                    <AccordionTrigger className="text-lg font-semibold px-4 py-3">
+    <section>
+      <Container>
+        <Box textAlign="center" py={4}>
+          <Typography variant="h5" fontWeight="bold">
+            How to Visit
+          </Typography>
+        </Box>
+
+        <Box display="grid" gridTemplateColumns={{ md: "2fr 1fr" }} gap={4}>
+          <Box>
+            {sections
+              .filter((sec) => sec !== "Map")
+              .map((section) => (
+                <Accordion key={section} disableGutters>
+                  <AccordionSummary
+                    expandIcon={
+                      <span className="material-icons-outlined">
+                        expand_more
+                      </span>
+                    }
+                    aria-controls={`${section}-content`}
+                    id={`${section}-header`}
+                  >
+                    <Typography variant="h6" fontWeight="medium">
                       {section}
-                    </AccordionTrigger>
-                    <AccordionContent className="px-4 py-3">
-                      <div className="space-y-4">
-                        {visitData
-                          .filter((item: VisitItem) => item.section === section)
-                          .map((item: VisitItem) => (
-                            <Card key={item.id} className="w-full">
-                              <CardHeader>
-                                <div className="flex items-center gap-4">
-                                  <img
-                                    src={item.imageUrl}
-                                    alt={item.title}
-                                    className="w-12 h-12 object-cover rounded-md"
-                                  />
-                                  <div>
-                                    <CardTitle className="text-lg font-semibold">{item.title}</CardTitle>
-                                    <Badge variant="secondary" className="mt-1">
-                                      {item.highlight}
-                                    </Badge>
-                                  </div>
-                                </div>
-                              </CardHeader>
-                              <CardContent>
-                                <CardDescription>{item.description}</CardDescription>
-                              </CardContent>
-                            </Card>
-                          ))}
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-            </Accordion>
-          </div>
-          {/* Right Column: Sticky Map */}
-          <div className="md:col-span-1">
-            <div className="sticky top-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg font-semibold">Badamba Map</CardTitle>
-                  <Badge variant="secondary">Pincode: 754031</Badge>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Use Google Maps for navigation to Badamba and landmarks like Singhanath Temple.
-                  </CardDescription>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239686.39843496605!2d85.23813942913799!3d20.352752999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190d2bffffffff%3A0xbec6a3b4e1e54b1!2sBadamba%2C%20Odisha%20754031!5e0!3m2!1sen!2sin!4v1730321234567!5m2!1sen!2sin"
-                    width="100%"
-                    height="400"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    {visitData
+                      .filter((it) => it.section === section)
+                      .map((item) => (
+                        <Card
+                          key={item.id}
+                          sx={{ mb: 2, backgroundColor: "white" }}
+                        >
+                          <CardHeader
+                            avatar={
+                              <Avatar
+                                src={item.imageUrl}
+                                alt={item.title}
+                                sx={{ width: 48, height: 48 }}
+                              />
+                            }
+                            title={
+                              <Typography
+                                variant="subtitle1"
+                                fontWeight="medium"
+                              >
+                                {item.title}
+                              </Typography>
+                            }
+                            action={
+                              <HighlightBadge>{item.highlight}</HighlightBadge>
+                            }
+                          />
+                          <CardContent>
+                            <Typography variant="body2" color="text.secondary">
+                              {item.description}
+                            </Typography>
+                          </CardContent>
+                        </Card>
+                      ))}
+                  </AccordionDetails>
+                </Accordion>
+              ))}
+          </Box>
+
+          <Box sx={{ position: "sticky", top: 16 }}>
+            <Card>
+              <CardHeader
+                title={
+                  <Typography variant="h6" fontWeight="medium">
+                    Badamba Map
+                  </Typography>
+                }
+                action={<HighlightBadge>Pincode: 754031</HighlightBadge>}
+              />
+              <CardContent sx={{ p: 0 }}>
+                <Box
+                  component="iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239686.39843496605!2d85.23813942913799!3d20.352752999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190d2bffffffff%3A0xbec6a3b4e1e54b1!2sBadamba%2C%20Odisha%20754031!5e0!3m2!1sen!2sin!4v1730321234567!5m2!1sen!2sin"
+                  width="100%"
+                  height={400}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  sx={{ border: 0 }}
+                  title="Badamba Map"
+                />
+              </CardContent>
+            </Card>
+          </Box>
+        </Box>
+      </Container>
     </section>
   );
 };

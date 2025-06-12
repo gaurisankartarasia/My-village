@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface BannerProps {
   imageUrl: string;
@@ -6,20 +6,23 @@ interface BannerProps {
   className?: string;
 }
 
-const FrontBanner: React.FC<BannerProps> = ({ imageUrl, altText, className = '' }) => {
+const FrontBanner: React.FC<BannerProps> = ({ className = "" }) => {
+  const imageUrl =
+    "https://res.cloudinary.com/di7larpuq/image/upload/q_auto/f_auto/v1749701965/Thumb20190501_111050_2_yzq18j.jpg";
+  const altText = "Front Banner";
   return (
     <div className={`relative w-full overflow-hidden ${className}`}>
       <picture>
-        <source 
-          srcSet={`${imageUrl}?w=1200&h=300&fit=crop&auto=format`} 
+        <source
+          srcSet={`${imageUrl}?w=1200&h=300&fit=crop&auto=format`}
           media="(min-width: 1024px)"
         />
-        <source 
-          srcSet={`${imageUrl}?w=768&h=192&fit=crop&auto=format`} 
+        <source
+          srcSet={`${imageUrl}?w=768&h=192&fit=crop&auto=format`}
           media="(min-width: 640px)"
         />
-        <source 
-          srcSet={`${imageUrl}?w=480&h=120&fit=crop&auto=format`} 
+        <source
+          srcSet={`${imageUrl}?w=480&h=120&fit=crop&auto=format`}
           media="(max-width: 639px)"
         />
         <img

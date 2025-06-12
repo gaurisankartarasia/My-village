@@ -1,0 +1,68 @@
+[
+   
+  {
+    "id": 8,
+    "title": "Deojhar waterfall",
+    "description": "Lush hills and rural landscapes offer nature walks and eco-tourism. Experience tribal culture and serene village life along the Mahanadi.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749749550/Deojhar-Waterfall-f-1_hrlxnd.jpg",
+    "bestTime": "Rainy days",
+    "slug":"deojhar-waterfall"
+  },
+  {
+  "id": 1,
+  "title": "Bhattarika Temple",
+  "description": "Ancient temple in Badamba, Odisha, dedicated to Maa Bhattarika. Located on a Mahanadi River island, accessible by boat, featuring Kalingan architecture. Vibrant during Makara Sankranti.",
+  "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749572212/bhattarika-temple_edu647.webp",
+  "bestTime": "any",
+  "slug": "bhattarika-temple"
+},
+  {
+    "id": 2,
+    "title": "Singhanath Temple",
+    "description": "One of the oldest temples in Odisha, dedicated to Lord Shiva, showcasing Kalingan architecture. Located on an island in the Mahanadi River, accessible by boat. Vibrant during Makara Sankranti.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749738887/IMG_20200229_133038_ctghaj.jpg",
+    "bestTime": "October to March, especially January for Makara Mela",
+    "slug": "singhanath-temple"
+  },
+  {
+    "id": 3,
+    "title": "Jagannath Temple & Palace (Rajabati)",
+    "description": "A 16th-century complex with Jagannath and Krishna temples, built by Badamba kings. Known for intricate carvings and spiritual ambiance, especially during Rath Yatra.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749572677/Thumb20190501_111327_ele9kz.jpg",
+    "bestTime": "Year-round, June/July for Rath Yatra",
+    "slug": "jagannath-temple-palace"
+  },
+  {
+    "id": 7,
+    "title": "Badamba Fort",
+    "description": "Ruins of the historic fort of Badamba’s princely rulers, surrounded by greenery. A site for history enthusiasts exploring Odisha’s royal past.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749657240/Thumb20190501_111050_1_hpopoc.jpg",
+    "bestTime": "October to March",
+    "slug":"badamba-fort"
+  },
+  {
+    "id": 4,
+    "title": "Mahanadi River",
+    "description": "A scenic river offering boating and tranquil views. Ideal for picnics and rituals during festivals, with lush surroundings enhancing its charm.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749745128/img_4017_arybe5.jpg",
+    "bestTime": "July to September for lush scenery, October to March for pleasant weather",
+    "slug": "mahanadi-river"
+  },
+  {
+    "id": 5,
+    "title": "Mahakali Temple",
+    "description": "Dedicated to Goddess Kali, this temple is a spiritual hub, vibrant during Durga Puja and Kali Puja with cultural performances and rituals.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749746381/mahakali-temple-kharod-badamba-7021834_xm7bal.webp",
+    "bestTime": "October to November for Durga Puja and Kali Puja",
+    "slug": "mahakali-temple"
+  },
+
+  {
+    "id": 6,
+    "title": "Dakhinakali Temple",
+    "description": "Dedicated to Goddess Kali, this temple is a spiritual hub, vibrant during Durga Puja and Kali Puja with cultural performances and rituals.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_20/f_auto/v1749747088/Untitled_design_m7zdty.png",
+    "bestTime": "October to November for Durga Puja and Kali Puja",
+    "slug":"dakhinakali-temple"
+  }
+]

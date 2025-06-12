@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "section": "Directions",
+    "title": "From Bhubaneswar",
+    "description": "By road, take NH-16 to Cuttack, then NH-55 to Badamba (~65 km, 1.5–2 hours). By train, travel to Cuttack (~30 minutes), then bus/taxi to Badamba (~1 hour).",
+    "imageUrl": "https://placehold.co/600x400.png?text=From+Bhubaneswar",
+    "highlight": "65 km, 1.5–2 hours"
+  },
+  {
+    "id": 2,
+    "section": "Directions",
+    "title": "From Cuttack",
+    "description": "Take NH-55 via Athagarh to Badamba (~40 km, ~1 hour by car/bus). Alternatively, take a train to Badabandha Road Station, then a taxi (~15 km).",
+    "imageUrl": "https://placehold.co/600x400.png?text=From+Cuttack",
+    "highlight": "40 km, ~1 hour"
+  },
+  {
+    "id": 3,
+    "section": "Transport",
+    "title": "By Air",
+    "description": "Fly to Biju Patnaik International Airport in Bhubaneswar (~65 km), then take a taxi or bus to Badamba (~1.5 hours).",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/badamba-community-hub.appspot.com/o/assets%2FSVGs%2Fflight.svg?alt=media&token=020b3297-ff26-4c67-9826-dc6eaed7051a",
+    "highlight": "Nearest Airport: Bhubaneswar"
+  },
+  {
+    "id": 4,
+    "section": "Transport",
+    "title": "By Train",
+    "description": "Reach Badabandha Road Station (~15 km) or Cuttack Station (~40 km), then take a taxi or auto-rickshaw to Badamba.",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/badamba-community-hub.appspot.com/o/assets%2FSVGs%2Ftrain.svg?alt=media&token=354a1ba0-b11a-4bc0-af39-13f474b231b0",
+    "highlight": "Badabandha Road or Cuttack"
+  },
+  {
+    "id": 5,
+    "section": "Transport",
+    "title": "By Road",
+    "description": "OSRTC buses from Bhubaneswar’s Baramunda Bus Stand or Cuttack’s Badambadi Bus Stand. Taxis and auto-rickshaws are also available.",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/badamba-community-hub.appspot.com/o/assets%2FSVGs%2Froad.svg?alt=media&token=5712001f-d178-4c98-8dff-6765edbdffec",
+    "highlight": "OSRTC Buses, Taxis"
+  },
+  {
+    "id": 6,
+    "section": "Accommodations",
+    "title": "In Badamba",
+    "description": "Budget guesthouses (~₹500–₹1,000/night) and homestays available. Contact Badamba NAC for bookings, especially during festivals.",
+    "imageUrl": "https://placehold.co/600x400.png?text=In+Badamba",
+    "highlight": "Guesthouses, Homestays"
+  },
+  {
+    "id": 7,
+    "section": "Accommodations",
+    "title": "In Cuttack",
+    "description": "Hotels like Seetal (~₹2,000–₹3,500/night) and Ambica Residency (~₹1,000–₹2,000/night) offer comfortable stays, ~40 km away.",
+    "imageUrl": "https://placehold.co/600x400.png?text=In+Cuttack",
+    "highlight": "40 km, Mid-range Hotels"
+  },
+  {
+    "id": 8,
+    "section": "Accommodations",
+    "title": "In Bhubaneswar",
+    "description": "Options include Swosti Premium (~₹4,000–₹6,000/night) and Pushpak (~₹1,200–₹2,500/night), ~65 km from Badamba.",
+    "imageUrl": "https://placehold.co/600x400.png?text=In+Bhubaneswar",
+    "highlight": "65 km, Luxury/Budget Hotels"
+  },
+  {
+    "id": 9,
+    "section": "Map",
+    "title": "Badamba Map",
+    "description": "Use Google Maps for navigation: https://maps.app.goo.gl/7z8z5z6z5z6z5z6z5. Shows Badamba, NH-55, and landmarks like Singhanath Temple.",
+    "imageUrl": "https://placehold.co/600x400.png?text=Badamba+Map",
+    "highlight": "Pincode: 754031"
+  }
+]

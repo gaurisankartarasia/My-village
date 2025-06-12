@@ -1,0 +1,119 @@
+{
+  "front_page_data":[
+    [
+ 
+  {
+    "id": 1,
+    "category": "Festivals",
+    "name": "Rath Yatra",
+    "description": "A vibrant chariot festival in June/July at the Jagannath Temple, with decorated chariots, devotional songs, and Odissi dance.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749713396/rath_yatra_tkugtl.png",
+    "highlight": "June/July, Jagannath mandir & Rajabati"
+  },
+  {
+    "id": 2,
+    "category": "Festivals",
+    "name": "Durga Puja & Kali Puja",
+    "description": "Held in October/November at Dakhinakali Temple, with pandals, Gotipua dance, and processions honoring Goddesses Durga and Kali.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749713666/durga_puja_ybybnu.png",
+    "highlight": "October/November, Dakhinakali Temple"
+  },
+   {
+    "id": 3,
+    "category": "Festivals",
+    "name": "Makara Mela",
+    "description": "Celebrated during Makara Sankranti (January) at Singhanath Temple, featuring rituals, music, dance, and stalls with crafts and food.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/v1749707019/bali-makara-mela-ground-gopinathpur-badamba-7885163_bzu7m5.webp",
+    "highlight": "January, Mahanadi River island near T-Setu"
+  },
+  {
+    "id": 5,
+    "category": "Cuisine",
+    "name": "Chhena Poda",
+    "description": "A roasted cottage cheese dessert with a caramelized flavor, popular during festivals and celebrations.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749713237/chhena_poda_ujovit.png",
+    "highlight": "Festival favorite"
+  }
+]
+  ],
+
+
+"specific_page_data":[
+  [
+ 
+  {
+    "id": 1,
+    "category": "Festivals",
+    "name": "Rath Yatra",
+    "description": "A vibrant chariot festival in June/July at the Jagannath Temple, with decorated chariots, devotional songs, and Odissi dance.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749713396/rath_yatra_tkugtl.png",
+    "highlight": "June/July, Jagannath mandir & Rajabati"
+  },
+  {
+    "id": 2,
+    "category": "Festivals",
+    "name": "Durga Puja & Kali Puja",
+    "description": "Held in October/November at Dakhinakali Temple, with pandals, Gotipua dance, and processions honoring Goddesses Durga and Kali.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749713666/durga_puja_ybybnu.png",
+    "highlight": "October/November, Dakhinakali Temple"
+  },
+   {
+    "id": 3,
+    "category": "Festivals",
+    "name": "Makara Mela",
+    "description": "Celebrated during Makara Sankranti (January) at Singhanath Temple, featuring rituals, music, dance, and stalls with crafts and food.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/v1749707019/bali-makara-mela-ground-gopinathpur-badamba-7885163_bzu7m5.webp",
+    "highlight": "January, Mahanadi River island near T-Setu"
+  },
+  {
+    "id": 4,
+    "category": "Cuisine",
+    "name": "Pakhala Bhata",
+    "description": "Fermented rice served with curd, vegetables, or fish curry, a cooling staple enjoyed especially in summer.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749715359/Pakhal-divas_zjjtdn.jpg",
+    "highlight": "Year-round, festival stalls"
+  },
+  {
+    "id": 5,
+    "category": "Cuisine",
+    "name": "Chhena Poda",
+    "description": "A roasted cottage cheese dessert with a caramelized flavor, popular during festivals and celebrations.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749713237/chhena_poda_ujovit.png",
+    "highlight": "Festival favorite"
+  },
+  {
+    "id": 6,
+    "category": "Traditional Clothing",
+    "name": "Sambalpuri Sarees",
+    "description": "Intricate ikat-woven sarees in vibrant colors, worn by women during festivals and ceremonies.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749715803/unnamed_pef3fw.png",
+    "highlight": "Festivals and ceremonies"
+  },
+  {
+    "id": 7,
+    "category": "Crafts",
+    "name": "Dhokra Art",
+    "description": "Tribal metal-casting craft using lost-wax technique, creating figurines and jewelry sold in markets and festivals.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_25/f_auto/v1749729003/unnamed_4_hxtxuq.png",
+    "highlight": "Makara Mela, local markets"
+  },
+  {
+    "id": 8,
+    "category": "Crafts",
+    "name": "Pattachitra",
+    "description": "Traditional scroll paintings depicting mythological stories, crafted by artisans in nearby villages.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_35/f_auto/v1749716283/unnamed_2_uheagd.png",
+    "highlight": "Popular souvenirs"
+  },
+  {
+    "id": 9,
+    "category": "Customs",
+    "name": "Odissi & Gotipua Dance",
+    "description": "Classical Odissi and traditional Gotipua dances performed during festivals, narrating divine stories with graceful movements.",
+    "imageUrl": "https://res.cloudinary.com/di7larpuq/image/upload/q_15/f_auto/v1749716388/unnamed_3_skbah8.png",
+    "highlight": "Temple festivals"
+  }
+]
+]
+
+}

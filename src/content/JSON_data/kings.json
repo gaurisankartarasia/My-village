@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Hatakeshwar Raut",
+    "reign": "1305-1327",
+    "description": "Founder of the dynasty; defeated Kondhs; established capital."
+  },
+  {
+    "id": 2,
+    "name": "Mallikeswar Rout",
+    "reign": "1327-1345",
+    "description": "Extended state to Agalpur; named state Baramba after Bhattarika."
+  },
+  {
+    "id": 3,
+    "name": "Durgeswar Rout",
+    "reign": "1345-1375",
+    "description": ""
+  },
+  {
+    "id": 4,
+    "name": "Jambeswar Rout",
+    "reign": "1375-1416",
+    "description": ""
+  },
+  {
+    "id": 5,
+    "name": "Bholeswar Rout",
+    "reign": "1416-1459",
+    "description": "Defeated Khandayat Chief of Amatia; extended western limit to Ratapat."
+  },
+  {
+    "id": 6,
+    "name": "Kanhu Rout",
+    "reign": "1459-1514",
+    "description": "Extended state eastwards to Mohulia."
+  },
+  {
+    "id": 7,
+    "name": "Madhab Rout",
+    "reign": "1514-1537",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "name": "Nabin Rout",
+    "reign": "1537-1560",
+    "description": "State attained its largest area. "
+  },
+  {
+    "id": 9,
+    "name": "Brajadhar Rout",
+    "reign": "1560-1584",
+    "description": ""
+  },
+  {
+    "id": 10,
+    "name": "Chandrasekhar Mangaraj",
+    "reign": "1584-1617",
+    "description": ""
+  },
+  {
+    "id": 11,
+    "name": "Narayan Chandra Mangaraj",
+    "reign": "1617-1635",
+    "description": ""
+  },
+  {
+    "id": 12,
+    "name": "Krishna Chandra Mangaraj",
+    "reign": "1635-1650",
+    "description": "Forced to acknowledge Maratha supremacy and pay annual tribute."
+  },
+  {
+    "id": 13,
+    "name": "Gopinath Chandra Mangaraj",
+    "reign": "1650-1679",
+    "description": ""
+  },
+  {
+    "id": 14,
+    "name": "Balabhadra Chandra Mangaraj",
+    "reign": "1679-1711",
+    "description": "Strengthened state administration."
+  },
+  {
+    "id": 15,
+    "name": "Fakir Chandra Mangaraj",
+    "reign": "1711-1743",
+    "description": "Received Mahapatra title from Gajapati Maharaja."
+  },
+  {
+    "id": 16,
+    "name": "Benudhar Chandra Mangaraj",
+    "reign": "1743-1748",
+    "description": "Short reign, faced regional conflicts."
+  },
+  {
+    "id": 17,
+    "name": "Padmanav Chandra Mangaraj",
+    "reign": "1748-1793",
+    "description": "State invaded by Khandpara; ruled during Khandpara invasion (13 months); weak ruler; sought help from Khurda."
+  },
+  {
+    "id": 18,
+    "name": "Pindik Chandra Mangaraj",
+    "reign": "1793-1842",
+    "description": "Long reign, focused on stability."
+  },
+  {
+    "id": 19,
+    "name": "Gopinath Chandra Mangaraj",
+    "reign": "1842-1869",
+    "description": "Promoted cultural growth."
+  },
+  {
+    "id": 20,
+    "name": "Dasarathi Birabar Mangaraj Mohapatra",
+    "reign": "1869-1881",
+    "description": "Transitioned to Raja title in 1874."
+  },
+  {
+    "id": 21,
+    "name": "Biswambhar Birabar Mangaraj Mohapatra",
+    "reign": "1881-1922",
+    "description": "Ruled during British consolidation."
+  },
+  {
+    "id": 22,
+    "name": "Narayan Chandra Birabar Mangaraj Mohapatra",
+    "reign": "1922-1954",
+    "description": "Last ruler to accede to the Indian Union."
+  }
+]
