@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "@/hooks/useScroll";
 
 import Home from "./pages";
@@ -22,7 +21,6 @@ import FeedbackReportPage from "./pages/feedback";
 const App: React.FC = () => {
   return (
     <>
-      <HelmetProvider>
         <ScrollToTop />
         <Navbar />
 
@@ -49,7 +47,6 @@ const App: React.FC = () => {
           {/* ----------------------NOT FOUND PAGE------------------------- */}
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </HelmetProvider>
     </>
   );
 };
