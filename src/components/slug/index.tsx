@@ -1,5 +1,5 @@
 import { type Slug } from "@/types";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 interface SlugContentProps {
   Content: React.ComponentType;
@@ -41,3 +41,4 @@ export default function SlugContent({
     </section>
   );
 }
+

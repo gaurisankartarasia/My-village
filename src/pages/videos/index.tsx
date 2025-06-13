@@ -8,6 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Box from "@mui/material/Box";
 
 import videoData from "@/content/JSON_data/videos.json";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 interface Video {
   id: string;
@@ -23,7 +24,14 @@ const VideoPage: React.FC = () => {
   }, []);
 
   return (
-    <Container maxWidth="xl" className="py-8 min-h-screen bg-gray-100">
+    <Container maxWidth="xl" className="py-8 min-h-screen">
+      <Helmet>
+        <title>Videos of Badamba</title>
+        <meta
+          name="description"
+          content="Some videos of Badamba"
+        />
+      </Helmet>
       <Typography
         variant="h5"
         component="h5"

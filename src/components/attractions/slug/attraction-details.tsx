@@ -1,5 +1,5 @@
 import { type Attraction } from "@/types";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 interface AttractionContentProps {
   Content: React.ComponentType;

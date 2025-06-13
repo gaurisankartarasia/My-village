@@ -6,6 +6,7 @@ import cultureData from "@/content/JSON_data/culture.json";
 import Chip from "@mui/material/Chip";
 import { type CultureItem } from "@/types";
 import Card from "@mui/material/Card";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 const colors = {
   bigStone: "#152536",
@@ -24,6 +25,10 @@ const transitions = {
 const CultureAndTraditions: React.FC = () => {
   return (
     <section>
+      <Helmet>
+        <title>Badamba culture and traditions</title>
+        <meta name="description" content="Culture and traditions in Badamba" />
+      </Helmet>
       <Container maxWidth="xl" sx={{ py: 6 }}>
         <Box textAlign="center" mb={5}>
           <Typography
