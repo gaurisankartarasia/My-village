@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
-import { Download } from "lucide-react";
 
 const MarkdownHelp = () => {
   const downloadMarkdownExample = () => {
@@ -332,7 +331,9 @@ console.log("Hello!");
                 <Button
                   variant="contained"
                   onClick={downloadMarkdownExample}
-                  startIcon={<Download size={16} />}
+                  startIcon={
+                    <span className="material-icons-outlined">download</span>
+                  }
                   sx={{ mt: 1 }}
                 >
                   Download Example Markdown File
