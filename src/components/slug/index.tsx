@@ -1,9 +1,9 @@
-import { type Attraction } from "@/types";
+import { type Slug } from "@/types";
 import { Helmet } from "react-helmet-async";
 
 interface SlugContentProps {
   Content: React.ComponentType;
-  frontmatter: Attraction;
+  frontmatter: Slug;
 }
 
 export default function SlugContent({
@@ -13,7 +13,7 @@ export default function SlugContent({
   return (
     <section className="py-12 px-4">
       <Helmet>
-        <title>{frontmatter.title} - Badamba Attractions</title>
+        <title>{frontmatter.title} </title>
         <meta name="description" content={frontmatter.description} />
       </Helmet>
       <div className="max-w-7xl mx-auto">

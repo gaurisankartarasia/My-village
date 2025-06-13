@@ -11,7 +11,7 @@ import CultureAndTraditions from "./pages/culture_traditions";
 
 import Attractions from "./pages/attractions";
 import AttractionDetail from "./pages/attractions/slug";
-import HistoryPage from "./pages/slug";
+import SlugPage from "./pages/slug";
 
 import PageNotFound from "./components/error/PageNotFound";
 
@@ -45,7 +45,7 @@ const App: React.FC = () => {
           {/* -------------------------------DYNAMIC PAGES----------------------- */}
 
           <Route path="/attractions/:slug/" element={<AttractionDetail />} />
-          <Route path="/:slug/" element={<HistoryPage />} />
+          <Route path="/:slug/" element={<SlugPage />} />
           {/* ----------------------NOT FOUND PAGE------------------------- */}
           <Route path="*" element={<PageNotFound />} />
         </Routes>

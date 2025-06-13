@@ -5,7 +5,7 @@ import { useSlugPageLoader } from "@/hooks/useSlugMD_loader";
 const PageNotWritten = lazy(() => import("@/components/error/PageNotFound"));
 const SlugContent = lazy(() => import("@/components/slug"));
 
-function HistoryPage() {
+function SlugPage() {
   const { Content, frontmatter, loading, error } = useSlugPageLoader();
 
   if (loading) {
@@ -19,7 +19,7 @@ function HistoryPage() {
   if (error || !Content || !frontmatter) {
     return (
       <div className="max-w-7xl mx-auto py-12 px-4">
-        <PageNotWritten />
+        <PageNotWritten /> 
       </div>
     );
   }
@@ -27,4 +27,4 @@ function HistoryPage() {
   return <SlugContent Content={Content} frontmatter={frontmatter} />;
 }
 
-export default HistoryPage;
+export default SlugPage;

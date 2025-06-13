@@ -13,8 +13,8 @@ interface NavLink {
 
 export const navLinks: NavLink[] = [
   { title: "Home", href: "/" },
-  { title: "About", href: "/about/" },
-  { title: "History", href: "/history/" },
+  { title: "About", href: "/about-badamba/" },
+  { title: "History", href: "/history-of-badamba/" },
   { title: "Kings", href: "/kings/" },
   { title: "Attractions", href: "/attractions/" },
   { title: "Culture & Traditions", href: "/culture_traditions/" },
